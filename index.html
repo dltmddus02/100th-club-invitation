@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>100회 자축파티</title>
-    </head>
-    <body>
-        HELLO gg
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>100회 자축파티</title>
+    <script src="banner.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      .inner-list {
+        display: flex;
+        transition: margin 0.5s ease-in-out;
+      }
+      .inner {
+        flex: 0 0 auto;
+      }
+      .bg-banner {
+        background-color: #171036;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap" class="container mt-5">
+      <div
+        class="outer overflow-hidden py-5 bg-gradient bg-banner"
+        style="--bs-bg-opacity: 0.5"
+      >
+        <div class="inner-list text-center text-white">
+          <div class="inner">
+            <h2>김연수</h2>
+          </div>
+          <div class="inner">
+            <h2>오새샘</h2>
+          </div>
+          <div class="inner">
+            <h2>그리고, 이승연</h2>
+          </div>
+        </div>
+      </div>
+      <div class="button-list text-center mt-3">
+        <button class="btn btn-primary button-left">left</button>
+        <button class="btn btn-primary button-right">right</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </body>
 </html>
