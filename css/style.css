@@ -35,8 +35,9 @@ body {
 .scroll-image {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
 }
 .firework {
