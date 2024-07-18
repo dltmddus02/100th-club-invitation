@@ -39,8 +39,7 @@ body {
   right: 20px;
   z-index: 1000;
 }
-.fireworks-1,
-.fireworks-2 {
+.firework {
   display: none;
   position: fixed;
   top: 50px;
