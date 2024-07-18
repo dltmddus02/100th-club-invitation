@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -24,22 +28,35 @@
         /* width: 100%; */
       }
       body {
-        /* margin: 75.994px; */
-        /* padding: 0; */
-        background-color: rgba(0, 0, 128, 0.2);
+        /* background-color: rgba(0, 0, 128, 0.2); */
+        background-image: url(pics/rainbow.png);
+        background-size: cover;
+        background-attachment: fixed;
       }
-      .song-myung-regular {
+      /* .song-myung-regular {
         font-family: "Song Myung", serif;
         font-weight: 400;
+        font-style: normal;
+      } */
+      .noto-serif-kr-regular {
+        font-family: "Noto Serif KR", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .noto-serif-kr-thick {
+        font-family: "Noto Serif KR", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
         font-style: normal;
       }
     </style>
   </head>
 
-  <body class="song-myung-regular" style="--bs-bg-opacity: 0.9">
+  <body class="noto-serif-kr-thick" style="--bs-bg-opacity: 0.9">
     <div id="wrap" class="container mt-5">
       <img
-        src="\f45-logo.png"
+        src="\pics\f45-logo.png"
         class="img-fluid mx-auto d-block"
         style="max-width: 200px"
       />
@@ -62,6 +79,12 @@
       <div class="button-list text-center mt-3 d-none">
         <button class="btn btn-primary button-left">left</button>
         <button class="btn btn-primary button-right">right</button>
+      </div>
+      <div class="text-center fs-1">
+        100회 클럽에 들어가기 위한 여정...<br />당신들을 초대합니다!
+      </div>
+      <div class="text-center noto-serif-kr-regular fs-1">
+        <br />7월 23일(화) 오후 7시15분<br />F45 신촌점
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
