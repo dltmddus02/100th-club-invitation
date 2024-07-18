@@ -57,6 +57,15 @@
         right: 20px;
         z-index: 1000;
       }
+      .fireworks-1,
+      .fireworks-2 {
+        display: none;
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1001;
+      }
     </style>
   </head>
 
@@ -153,6 +162,18 @@
         alt="100"
         class="img-fluid scroll-image"
         id="scroll-image"
+      />
+      <img
+        src="pics/폭죽1.png"
+        alt="폭죽"
+        class="img-fluid fireworks-1"
+        id="fireworks-1"
+      />
+      <img
+        src="pics/폭죽2.png"
+        alt="폭죽"
+        class="img-fluid fireworks-2"
+        id="fireworks-2"
       />
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
