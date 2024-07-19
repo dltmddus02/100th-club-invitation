@@ -17,8 +17,12 @@ body {
   background-color: #171036;
   /* width: 100%; */
 }
+.content-1 {
+  background-image: url(../pics/초대장.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
 body {
-  /* background-color: rgba(0, 0, 128, 0.2); */
   background-image: url(../pics/rainbow.png);
   background-size: cover;
   background-attachment: fixed;
