@@ -29,7 +29,7 @@ $(window).on("wheel", function (e) {
 
 $(document).ready(function () {
   var lastScrollTop = 0;
-  var elements = $("#scroll-image, #firework");
+  var elements = $("#scroll-image, #firework-1, #firework-2");
 
   $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
@@ -39,11 +39,6 @@ $(document).ready(function () {
         elements.addClass("hide").removeClass("show");
       }, 2000);
     }
-    // else {
-    // setTimeout(function () {
-    // elements.addClass("hide").removeClass("show");
-    // }, 2000);
-    // }
     lastScrollTop = scrollTop;
   });
 });

@@ -52,12 +52,20 @@ body {
   transform: translateX(-50%);
   z-index: 1000;
 }
-.firework {
+.firework-1 {
   display: none;
   position: fixed;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 20vw;
+  top: 10%;
+  right: 10%;
+  z-index: 1001;
+}
+.firework-2 {
+  display: none;
+  position: fixed;
+  width: 20vw;
+  top: 10%;
+  left: 10%;
   z-index: 1001;
 }
 @keyframes fadeIn {
