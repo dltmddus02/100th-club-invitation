@@ -136,7 +136,8 @@
     background-attachment: fixed;
   }
   img {
-    width: 40%; /* 모바일에서 이미지 너비를 부모 요소에 맞춤 */
+    max-width: 100%;
+    height: auto;
   }
   .scroll-image {
     display: none;
@@ -182,14 +183,14 @@
     /* z-index: 999; */
     display: block;
   }
-  .row {
+  /* .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
   .col-auto {
     padding-right: 0 !important;
     padding-left: 0 !important;
-  }
+  } */
 }
 
 @keyframes fadeIn {
