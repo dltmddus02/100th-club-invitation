@@ -38,7 +38,16 @@ body {
     background-size: 100% auto; /* 더 작은 화면에서도 동일하게 적용 */
   }
 }
+.content-2,
+.content-3 {
+  transform: scale(0.9); /*90% 크기로 줄이기 */
+}
+html {
+  font-size: 90%;
+}
 body {
+  /* transform: scale(0.9); 90% 크기로 줄이기 */
+  /* transform-origin: top left; 변환의 기준점을 왼쪽 위로 설정 */
   background-image: url(../pics/rainbow.png);
   background-size: cover;
   background-attachment: fixed;
