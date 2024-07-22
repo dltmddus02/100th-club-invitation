@@ -89,25 +89,16 @@
   .content {
     height: 100vh;
   }
-  .bg-banner {
-    width: 100%;
-    /* margin: 0 auto; */
-  }
   .inner-list {
-    justify-content: center; /* 가로 방향으로 가운데 정렬 */
-    align-items: center; /* 세로 방향으로 가운데 정렬 */
-    text-align: center;
-  }
-  .outer {
-    width: 50%; /* .outer 요소의 너비를 50%로 설정 */
-    margin: 0 auto; /* .outer 요소를 가로 방향으로 가운데 정렬 */
-    overflow: hidden;
-    background: var(--bs-bg-opacity, 0.5);
-    border-radius: 0.75rem; /* rounded-3 클래스와 동일한 border-radius 설정 */
-    background-color: #171036;
+    display: flex;
+    transition: margin 0.5s ease-in-out;
   }
   .inner {
     flex: 0 0 auto;
+  }
+  .bg-banner {
+    background-color: #171036;
+    /* width: 100%; */
   }
   .content-1 {
     background-color: #fb4fc2;
@@ -134,7 +125,7 @@
     background-attachment: fixed;
   }
   img {
-    width: 80%; /* 모바일에서 이미지 너비를 부모 요소에 맞춤 */
+    width: 40%; /* 모바일에서 이미지 너비를 부모 요소에 맞춤 */
   }
   .scroll-image {
     display: none;
