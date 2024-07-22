@@ -8,8 +8,8 @@ window.addEventListener(
 var $html = $("html");
 var page = 1;
 var lastPage = $(".content").length;
-//
-$html.animate({ scrollTop: 0 }, 10);
+
+// $html.animate({ scrollTop: 0 }, 10);
 
 $(window).on("wheel", function (e) {
   if ($html.is(":animated")) return;
@@ -23,7 +23,10 @@ $(window).on("wheel", function (e) {
 
     page--;
   }
-  var posTop = (page - 1) * $(window).height();
+  var posTop = $(".content")
+    .eq(page - 1)
+    .offset().top;
+  // var posTop = (page - 1) * $(window).height();
   $html.animate({ scrollTop: posTop });
 });
 
