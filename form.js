@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const commentTextInput = document.getElementById("comment-text");
 
   function loadComments() {
-    fetch("http://127.0.0.1:8000/api/comments/")
+    fetch("https://mycomment-67f51754e324.herokuapp.com/api/comments/")
       .then((response) => response.json())
       .then((data) => {
         commentsList.innerHTML = "";
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = usernameInput.value;
     const text = commentTextInput.value;
 
-    fetch("http://127.0.0.1:8000/api/comments/", {
+    fetch("https://mycomment-67f51754e324.herokuapp.com/api/comments/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
