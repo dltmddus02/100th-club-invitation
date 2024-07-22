@@ -97,6 +97,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .example {
+    background-color: lightgreen;
+    font-size: 20px;
+  }
   .content {
     height: 100vh;
   }
@@ -136,9 +140,10 @@
     background-attachment: fixed;
   }
   img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
   }
+
   .scroll-image {
     display: none;
     position: fixed;
